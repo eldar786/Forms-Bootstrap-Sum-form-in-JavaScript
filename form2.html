@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
+
+
+</head>
+
+<div class="form-style-6 border border border-dark">
+
+<h1>Umzugsinfo</h1>
+<form>
+
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-5 col-form-label">Ihr gewünschter Umzugstermin*</label>
+    <div class="col-sm-7">
+
+<!-- Kalendar -->
+      <div class="container">
+          <div class="row">
+              <div class='col-sm-4'>
+                  <div class="form-group">
+                      <div class='input-group date' id='datetimepicker1'>
+                          <input type='text' class="form-control" />
+                          <span class="input-group-addon">
+                              <span class="glyphicon glyphicon-calendar"></span>
+                          </span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+<!-- Kalendar END -->
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-5 col-form-label">Welche Art von Umzug benötigen Sie*</label>
+    <div class="col-sm-7">
+      <div class="form-group">
+      <select class="form-control" id="sel1">
+        <option>Bitte auswahlen</option>
+        <option>Privatumzug</option>
+        <option>Firmenumzug</option>
+        <option>Auslandsumzug</option>
+        <option>Umzug mit Einlagerung</option>
+        <option>Beiladung</option>
+      </select>
+    </div>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-5 col-form-label">Wie möchten Sie Ihr Angebot erhalten*	</label>
+    <div class="col-sm-7">
+      <div class="form-group">
+      <select class="form-control" id="sel1">
+        <option>Bitte auswahlen</option>
+        <option>Privatumzug</option>
+        <option>Firmenumzug</option>
+        <option>Auslandsumzug</option>
+        <option>Umzug mit Einlagerung</option>
+        <option>Beiladung</option>
+      </select>
+    </div>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-5 col-form-label">Bei Fragen erreichen Sie mich am besten*</label>
+    <div class="col-sm-7">
+      <div class="form-group">
+      <select class="form-control" id="sel1">
+        <option>Bitte auswahlen</option>
+        <option>Privatumzug</option>
+        <option>Firmenumzug</option>
+        <option>Auslandsumzug</option>
+        <option>Umzug mit Einlagerung</option>
+        <option>Beiladung</option>
+      </select>
+    </div>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-5 col-form-label">Der Umzug wird bezahlt von*</label>
+    <div class="col-sm-7">
+      <div class="form-group">
+      <select class="form-control" id="sel1">
+        <option>Bitte auswahlen</option>
+        <option>Privatumzug</option>
+        <option>Firmenumzug</option>
+        <option>Auslandsumzug</option>
+        <option>Umzug mit Einlagerung</option>
+        <option>Beiladung</option>
+      </select>
+    </div>
+    </div>
+  </div>
+
+
+
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-5 col-form-label">Wie sind Sie auf uns aufmerksam geworden*</label>
+    <div class="col-sm-7">
+      <div class="form-group">
+      <select class="form-control" id="sel1">
+        <option>Bitte auswahlen</option>
+        <option>Privatumzug</option>
+        <option>Firmenumzug</option>
+        <option>Auslandsumzug</option>
+        <option>Umzug mit Einlagerung</option>
+        <option>Beiladung</option>
+      </select>
+    </div>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-5 col-form-label">
+      <a href="C:\Users\Eldar\Desktop\bootstrap-4.1.3-dist\index.html"
+        class="previous float-left">Home
+      </a>
+    </label>
+    <div class="col-sm-7">
+      <a href="C:\Users\Eldar\Desktop\bootstrap-4.1.3-dist\form3.html"
+      class="next float-right"><img src="C:\Users\Eldar\Desktop\bootstrap-4.1.3-dist\arrowright.png">
+      </a>
+
+    </div>
+  </div>
+
+</form>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $('#datetimepicker1').datetimepicker();
+    });
+</script>
+
+</body>
+</html>
+
+<style>
+.form-style-6{
+    font: 95% Arial, Helvetica, sans-serif;
+    max-width: 748px;
+    margin: 10px auto;
+    padding: 16px;
+    background: white;
+}
+.form-style-6 h1{
+    background: #273858;
+    padding: 20px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    margin: -16px -16px 16px -16px;
+}
+
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+    background-color: none;
+    color: white;
+}
+
+.next {
+    background-color: #4C84B2;
+    color: white;
+    padding: 5px 9px 5px 9px;
+
+}
+.previous{
+  background-color: #4C84B2;
+  color: white;
+  padding: 6px 11px 6px 11px;
+  margin-top: -7px;
+}
+
+.round {
+    border-radius: 50%;
+}
+</style>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
+</head>
+
+<div class="form-style-6 border border border-dark">
+
+<h1>Verpackungsmaterial</h1>
+<form>
+
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-5 col-form-label">
+      Wenn Sie das Verpackungsmaterial selbst besorgen werden, dann kreuzen Sie bitte JA an</label>
+    <div class="col-sm-6">
+      <label class="checkbox-inline"><input type="checkbox">JA</label>
+
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-4 col-form-label">Umzugskartons</label>
+    <div class="col-sm-7">
+      <input class="form-control">
+    </div>Stk.
+  </div>
+
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-4 col-form-label">Kleiderboxen</label>
+    <div class="col-sm-7">
+      <input class="form-control">
+    </div>Stk.
+  </div>
+
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-4 col-form-label">Bücherkartons</label>
+    <div class="col-sm-7">
+      <input class="form-control">
+    </div>Stk.
+  </div>
+
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-4 col-form-label">Luftpolsterfolie</label>
+    <div class="col-sm-7">
+      <input class="form-control">
+    </div>Lfm.
+  </div>
+
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-4 col-form-label">Seidenpapier / Tellerpapier</label>
+    <div class="col-sm-7">
+      <input class="form-control">
+    </div>Kg.
+  </div>
+
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-4 col-form-label">Klebeband</label>
+    <div class="col-sm-7">
+      <input class="form-control">
+    </div>Stk.
+  </div>
+
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-4 col-form-label">Matratzenhülle</label>
+    <div class="col-sm-7">
+      <input class="form-control">
+    </div>Stk.
+  </div>
+
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-4 col-form-label">Bilderecke</label>
+    <div class="col-sm-7">
+      <input class="form-control">
+    </div>Stk.
+  </div>
+<br>
+  <h4 style="text-align:center;">Ladevolumenberechnung*</h4>
+  <p class="border-bottom" style="text-align:center;">
+    Sie haben zwei Möglichkeiten uns Ihr Ladevolumen zu übermitteln. Bitte wählen Sie eine Option aus.</p>
+
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#myModal">
+    1. Ich will die UMZUGSGUTLISTE hier online ausfüllen (EMPFOHLEN).</button>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+
+          </div>
+          <div class="modal-body">
+            <h4>www.amel.de. says</h4>
+            <p>Sie haben ausgewahlt: Die UMZUGSGUTLISTE online auszufullen</p>
+            <br>
+            <p>Hinweis: Wenn Sie damit einverstanden sind,
+              dann klicken Sie bitte auf OK und fullen Sie die Liste ausfuhrlich aus.</p>
+          </div>
+          <div class="modal-footer">
+            <a href="C:\Users\Eldar\Desktop\bootstrap-4.1.3-dist\form8.html"
+            class="btn btn-primary" role="button">OK</a>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+<br>
+
+<button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#myModal2">
+2. Ich will meine bereits ausgefüllte UMZUGSGUTLISTE mit anhängen.</button>
+
+<!-- Modal -->
+<div id="myModal2" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+
+      </div>
+      <div class="modal-body">
+        <h4>www.amel.de. says</h4>
+        <p>Sie haben ausgewahlt: Ihre ausgefüllte UMZUGSGUTLISTE mit anhängen</p>
+        <br>
+        <p>Hinweis: Erlaubt sind max. 3 Detaien(PDF,xls oder .doc),jeweils max. 2 Megabyte pro Detai.
+          Wenn Sie damit einverstanden sind, dann klicken Sie bitte auf OK und fugen Sie die Detaien ein.
+          dann klicken Sie bitte auf OK und fullen Sie die Liste ausfuhrlich aus.</p>
+      </div>
+      <div class="modal-footer">
+        <a href="C:\Users\Eldar\Desktop\bootstrap-4.1.3-dist\form9.html"
+        class="btn btn-primary" role="button">OK</a>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <a href="C:\Users\Eldar\Desktop\bootstrap-4.1.3-dist\form8.html" class="btn btn-primary btn-block">
+    1. Ich will die UMZUGSGUTLISTE hier online ausfüllen (EMPFOHLEN).</a>
+    <a href="C:\Users\Eldar\Desktop\bootstrap-4.1.3-dist\form9.html" class="btn btn-primary btn-block">
+    2. Ich will meine bereits ausgefüllte UMZUGSGUTLISTE mit anhängen.</a> -->
+
+    <br>
+      <h4 style="text-align:left;">Meine Bemerkungen</h4>
+      <p class="border-bottom" style="text-align:left;">Wenn Sie uns noch etwas mitteilen möchten,
+        können Sie das gerne hier machen.</p>
+        <div class="form-group" style="width:60%;">
+        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="4"></textarea>
+        </div>
+        <div class="form-group row">
+          <label for="inputPassword3" class="col-sm-6 col-form-label"><p style="font-size:medium;font-weight:normal">
+            Bitte geben Sie den Sicherheitscode ein &nbsp;  43623</p></label>
+        <div class="col-sm-4">
+          <input class="form-control">
+        </div>
+</div>
+<button type="button" class="btn">Anfrage senden</button>
+<br>
+
+<!-- BUTTON BACK i HOME -->
+
+  <!-- <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-5 col-form-label">
+      <a href="C:\Users\Eldar\Desktop\bootstrap-4.1.3-dist\index.html"
+        class="previous float-left">Home
+      </a>
+    </label>
+    <div class="col-sm-7">
+      <a href="C:\Users\Eldar\Desktop\bootstrap-4.1.3-dist\form6.html"
+      class="next float-right">
+      <img src="C:\Users\Eldar\Desktop\bootstrap-4.1.3-dist\Back.png">
+      </a>
+    </div>
+  </div> -->
+
+  <!-- BUTTON BACK i HOME END -->
+</form>
+</div>
+</body>
+</html>
+
+<style>
+.form-style-6{
+    font: 95% Arial, Helvetica, sans-serif;
+    max-width: 748px;
+    margin: 10px auto;
+    padding: 16px;
+    background: white;
+}
+.form-style-6 h1{
+    background: #273858;
+    padding: 20px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    margin: -16px -16px 16px -16px;
+}
+
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+    background-color: none;
+    color: white;
+}
+
+.next {
+    background-color: #4C84B2;
+    color: white;
+    padding: 5px 9px 5px 9px;
+
+}
+.previous{
+  background-color: #4C84B2;
+  color: white;
+  padding: 6px 11px 6px 11px;
+  margin-top: -4px;
+}
+.round {
+    border-radius: 50%;
+}
+</style>

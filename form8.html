@@ -1,0 +1,2582 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
+</head>
+<title>Umzugsrechner</title>
+<div class="form-style-6 border border border-dark">
+
+<h1>Wohnzimmer</h1>
+<form>
+
+  <div class="container">
+    <div class="row red1">
+      <div class="col-sm-3" style="background-color:#EEEEEE;"><h5>Stück</h5></div>&nbsp;
+      <div class="col-sm-3" style="background-color:#EEEEEE;"><h5>Gegenstand</h5></div>&nbsp;
+      <div class="col-sm-1" style="background-color:#EEEEEE;"><h5>RE</h5></div>&nbsp;
+      <div class="col-sm-1" style="background-color:#EEEEEE;"><h5>Ges.RE</h5></div>&nbsp;
+      <div class="col-sm-1" style="background-color:#EEEEEE;">De- & Montage</div>&nbsp;
+      <div class="col-sm-1" style="background-color:#EEEEEE;">Ein- & Auspacken</div>&nbsp;
+    </div>
+  </div>
+  <br>
+
+  <table id="tblProducts">
+    <tbody>
+        <tr>
+        <td>
+  <!-- UBACITI INPUT -->
+  <div class="input-group">
+        <span class="input-group-btn">
+            <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty">
+                <span class="glyphicon glyphicon-minus"></span>
+            </button>
+        </span>
+        <input type="text" name="qty" class="form-control input-number qty" min="0" max="100">
+        <span class="input-group-btn">
+            <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty">
+                <span class="glyphicon glyphicon-plus"></span>
+            </button>
+        </span>
+    </div>
+    <!-- ORGINAL -->
+    <!-- <div class="input-group">
+          <span class="input-group-btn">
+              <button type="button" class="btn btn-default btn-number"  data-type="minus" data-field="qty">
+                <span class="glyphicon glyphicon-minus"></span>
+              </button>
+          </span>
+          <input type="text" name="qty" class="form-control input-number" min="0" max="100">
+          <span class="input-group-btn">
+              <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="qty">
+                  <span class="glyphicon glyphicon-plus"></span>
+              </button>
+          </span>
+      </div> -->
+  </td>
+  <td><h5 style="margin-left:35px;text-align:center;">Anbauwand bis 38cm je angef.<br>M.</h5></td>
+        <td><input type="text" class="price border border-0" value="8" name="price" readonly=""
+          style="text-align:right;margin-left:-25px;font-weight:bold;display:table;"></td>
+        <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+          style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+          <td><label class="col-sm-1 col-form-label"><input type="checkbox"></label></td>
+          <td><label class="col-sm-1 col-form-label" style="margin-left:60px;"><input type="checkbox"></label></td>
+
+        </tr>
+    </tbody>
+    </table>
+
+    <br>
+
+
+  <table id="tblProducts">
+    <tbody>
+        <tr>
+        <td>
+  <!-- UBACITI INPUT -->
+  <div class="input-group">
+        <span class="input-group-btn">
+            <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty1">
+                <span class="glyphicon glyphicon-minus"></span>
+            </button>
+        </span>
+        <input type="text" name="qty1" class="form-control input-number qty1" min="0" max="100">
+        <span class="input-group-btn">
+            <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty1">
+                <span class="glyphicon glyphicon-plus"></span>
+            </button>
+        </span>
+    </div>
+  </td><td><h5 style="margin-left: 35px;text-align:center;">Anbauwand über 38cm je angef.<br>M.</h5></td>
+
+        <td><input type="text" class="price border border-0" value="10" name="price" readonly=""
+          style="text-align:right;margin-left:-35px;font-weight:bold;display:table;"></td>
+        <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+          style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+          <td><label class="col-sm-1 col-form-label"><input type="checkbox"></label></td>
+          <td><label class="col-sm-1 col-form-label" style="margin-left:60px;"><input type="checkbox"></label></td>
+
+        </tr>
+    </tbody>
+    </table>
+
+    <br>
+
+
+    <table id="tblProducts">
+      <tbody>
+          <tr>
+          <td>
+    <!-- UBACITI INPUT -->
+    <div class="input-group">
+          <span class="input-group-btn">
+              <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty2">
+                  <span class="glyphicon glyphicon-minus"></span>
+              </button>
+          </span>
+          <input type="text" name="qty2" class="form-control input-number qty2" min="0" max="100">
+          <span class="input-group-btn">
+              <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty2">
+                  <span class="glyphicon glyphicon-plus"></span>
+              </button>
+          </span>
+      </div>
+    </td><td><h5 style="margin-left:35px;text-align:center;">Bilder über 0,8 Meter</h5></td>
+
+          <td><input type="text" class="price border border-0" value="8" name="price" readonly=""
+            style="text-align:right;margin-left:36px;font-weight:bold;display:table;"></td>
+          <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+            style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+          </tr>
+      </tbody>
+      </table>
+
+      <br>
+
+
+      <table id="tblProducts">
+        <tbody>
+            <tr>
+            <td>
+      <!-- UBACITI INPUT -->
+      <div class="input-group">
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty3">
+                    <span class="glyphicon glyphicon-minus"></span>
+                </button>
+            </span>
+            <input type="text" name="qty3" class="form-control input-number qty3" min="0" max="100">
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty3">
+                    <span class="glyphicon glyphicon-plus"></span>
+                </button>
+            </span>
+        </div>
+      </td><td><h5 style="margin-left:35px;text-align:center;">Buffet mit Aufsatz</h5></td>
+
+            <td><input type="text" class="price border border-0" value="18" name="price" readonly=""
+              style="text-align:right;margin-left:57px;font-weight:bold;display:table;"></td>
+            <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+              style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+            </tr>
+        </tbody>
+        </table>
+
+        <br>
+
+
+      <table id="tblProducts">
+        <tbody>
+            <tr>
+            <td>
+      <!-- UBACITI INPUT -->
+      <div class="input-group">
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty4">
+                    <span class="glyphicon glyphicon-minus"></span>
+                </button>
+            </span>
+            <input type="text" name="qty4" class="form-control input-number qty4" min="0" max="100">
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty4">
+                    <span class="glyphicon glyphicon-plus"></span>
+                </button>
+            </span>
+        </div>
+      </td><td><h5 style="margin-left:35px;text-align:center;">Bücherregal zerlegbar je angef.<br>M.</h5></td>
+
+            <td><input type="text" class="price border border-0" value="4" name="price" readonly=""
+              style="text-align:right;margin-left:-29px;font-weight:bold;display:table;"></td>
+            <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+              style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+              <td><label class="col-sm-1 col-form-label"><input type="checkbox"></label></td>
+              <td><label class="col-sm-1 col-form-label"></label></td>
+
+            </tr>
+        </tbody>
+        </table>
+        <br>
+
+
+        <table id="tblProducts">
+          <tbody>
+              <tr>
+              <td>
+        <!-- UBACITI INPUT -->
+        <div class="input-group">
+              <span class="input-group-btn">
+                  <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty5">
+                      <span class="glyphicon glyphicon-minus"></span>
+                  </button>
+              </span>
+              <input type="text" name="qty5" class="form-control input-number qty5" min="0" max="100">
+              <span class="input-group-btn">
+                  <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty5">
+                      <span class="glyphicon glyphicon-plus"></span>
+                  </button>
+              </span>
+          </div>
+        </td><td><h5 style="margin-left:35px;text-align:center;">Bücherregal massiv je angef. M.</h5></td>
+
+              <td><input type="text" class="price border border-0" value="8" name="price" readonly=""
+                style="text-align:right;margin-left:-33px;font-weight:bold;display:table;"></td>
+              <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+                style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+                <td><label class="col-sm-1 col-form-label"><input type="checkbox"></label></td>
+                <td><label class="col-sm-1 col-form-label"></label></td>
+              </tr>
+          </tbody>
+          </table>
+
+          <br>
+
+
+        <table id="tblProducts">
+          <tbody>
+              <tr>
+              <td>
+        <!-- UBACITI INPUT -->
+        <div class="input-group">
+              <span class="input-group-btn">
+                  <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty6">
+                      <span class="glyphicon glyphicon-minus"></span>
+                  </button>
+              </span>
+              <input type="text" name="qty6" class="form-control input-number qty6" min="0" max="100">
+              <span class="input-group-btn">
+                  <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty6">
+                      <span class="glyphicon glyphicon-plus"></span>
+                  </button>
+              </span>
+          </div>
+        </td><td><h5 style="margin-left:35px;text-align:center;">Deckenlampe</h5></td>
+
+              <td><input type="text" class="price border border-0" value="2" name="price" readonly=""
+                style="text-align:right;margin-left:81px;font-weight:bold;display:table;"></td>
+              <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+                style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+                <td><label class="col-sm-1 col-form-label"><input type="checkbox"></label></td>
+                <td><label class="col-sm-1 col-form-label" style="margin-left:60px;"><input type="checkbox"></label></td>
+
+              </tr>
+          </tbody>
+          </table>
+
+          <br>
+
+          <table id="tblProducts">
+            <tbody>
+                <tr>
+                <td>
+          <!-- UBACITI INPUT -->
+          <div class="input-group">
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty7">
+                        <span class="glyphicon glyphicon-minus"></span>
+                    </button>
+                </span>
+                <input type="text" name="qty7" class="form-control input-number qty7" min="0" max="100">
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty7">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </button>
+                </span>
+            </div>
+          </td><td><h5 style="margin-left:35px;text-align:center;">Fernseher</h5></td>
+
+                <td><input type="text" class="price border border-0" value="6" name="price" readonly=""
+                  style="text-align:right;margin-left:103px;font-weight:bold;display:table;"></td>
+                <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+                  style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+                  <td><label class="col-sm-1 col-form-label"></label></td>
+                  <td><label class="col-sm-1 col-form-label" style="margin-left:73px;"><input type="checkbox"></label></td>
+
+                </tr>
+            </tbody>
+            </table>
+
+            <br>
+
+
+          <table id="tblProducts">
+            <tbody>
+                <tr>
+                <td>
+          <!-- UBACITI INPUT -->
+          <div class="input-group">
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty8">
+                        <span class="glyphicon glyphicon-minus"></span>
+                    </button>
+                </span>
+                <input type="text" name="qty8" class="form-control input-number qty8" min="0" max="100">
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty8">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </button>
+                </span>
+            </div>
+          </td><td><h5 style="margin-left:35px;text-align:center;">Fenstertisch/ -schränkchen</h5></td>
+
+                <td><input type="text" class="price border border-0" value="2" name="price" readonly=""
+                  style="text-align:right;margin-left:-2px;font-weight:bold;display:table;"></td>
+                <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+                  style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+                </tr>
+            </tbody>
+            </table>
+
+            <br>
+
+            <table id="tblProducts">
+              <tbody>
+                  <tr>
+                  <td>
+            <!-- UBACITI INPUT -->
+            <div class="input-group">
+                  <span class="input-group-btn">
+                      <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty9">
+                          <span class="glyphicon glyphicon-minus"></span>
+                      </button>
+                  </span>
+                  <input type="text" name="qty9" class="form-control input-number qty9" min="0" max="100">
+                  <span class="input-group-btn">
+                      <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty9">
+                          <span class="glyphicon glyphicon-plus"></span>
+                      </button>
+                  </span>
+              </div>
+            </td><td><h5 style="margin-left:35px;text-align:center;">Flügel</h5></td>
+
+                  <td><input type="text" class="price border border-0" value="20" name="price" readonly=""
+                    style="text-align:right;margin-left:128px;font-weight:bold;display:table;"></td>
+                  <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+                    style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+                    <td><label class="col-sm-1 col-form-label"></label></td>
+                    <td><label class="col-sm-1 col-form-label"style="margin-left:73px;"><input type="checkbox"></label></td>
+
+                  </tr>
+              </tbody>
+              </table>
+
+              <br>
+
+
+            <table id="tblProducts">
+              <tbody>
+                  <tr>
+                  <td>
+            <!-- UBACITI INPUT -->
+            <div class="input-group">
+                  <span class="input-group-btn">
+                      <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty10">
+                          <span class="glyphicon glyphicon-minus"></span>
+                      </button>
+                  </span>
+                  <input type="text" name="qty10" class="form-control input-number qty10" min="0" max="100">
+                  <span class="input-group-btn">
+                      <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty10">
+                          <span class="glyphicon glyphicon-plus"></span>
+                      </button>
+                  </span>
+              </div>
+            </td><td><h5 style="margin-left:35px;text-align:center;">Klavier</h5></td>
+
+                  <td><input type="text" class="price border border-0" value="15" name="price" readonly=""
+                    style="text-align:right;margin-left:124px;font-weight:bold;display:table;"></td>
+                  <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+                    style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+                    <td><label class="col-sm-1 col-form-label"></label></td>
+                    <td><label class="col-sm-1 col-form-label" style="margin-left:73px;"><input type="checkbox"></label></td>
+
+                  </tr>
+              </tbody>
+              </table>
+
+              <br>
+
+              <table id="tblProducts">
+                <tbody>
+                    <tr>
+                    <td>
+              <!-- UBACITI INPUT -->
+              <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty11">
+                            <span class="glyphicon glyphicon-minus"></span>
+                        </button>
+                    </span>
+                    <input type="text" name="qty11" class="form-control input-number qty11" min="0" max="100">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty11">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                    </span>
+                </div>
+              </td><td><h5 style="margin-left:35px;text-align:center;">Musikschrank/Turm</h5></td>
+
+                    <td><input type="text" class="price border border-0" value="4" name="price" readonly=""
+                      style="text-align:right;margin-left:45px;font-weight:bold;display:table;"></td>
+                    <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+                      style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+                    </tr>
+                </tbody>
+                </table>
+
+                <br>
+
+
+              <table id="tblProducts">
+                <tbody>
+                    <tr>
+                    <td>
+              <!-- UBACITI INPUT -->
+              <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty12">
+                            <span class="glyphicon glyphicon-minus"></span>
+                        </button>
+                    </span>
+                    <input type="text" name="qty12" class="form-control input-number qty12" min="0" max="100">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty12">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                    </span>
+                </div>
+              </td><td><h5 style="margin-left:35px;text-align:center;">Nähmaschine (Schrank)</h5></td>
+
+                    <td><input type="text" class="price border border-0" value="4" name="price" readonly=""
+                      style="text-align:right;margin-left:16px;font-weight:bold;display:table;"></td>
+                    <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+                      style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+                    </tr>
+                </tbody>
+                </table>
+
+                <br>
+
+                <table id="tblProducts">
+                  <tbody>
+                      <tr>
+                      <td>
+                <!-- UBACITI INPUT -->
+                <div class="input-group">
+                      <span class="input-group-btn">
+                          <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty13">
+                              <span class="glyphicon glyphicon-minus"></span>
+                          </button>
+                      </span>
+                      <input type="text" name="qty13" class="form-control input-number qty13" min="0" max="100">
+                      <span class="input-group-btn">
+                          <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty13">
+                              <span class="glyphicon glyphicon-plus"></span>
+                          </button>
+                      </span>
+                  </div>
+                </td><td><h5 style="margin-left:35px;text-align:center;">Pflanze bis 0,7 Meter</h5></td>
+
+                      <td><input type="text" class="price border border-0" value="3" name="price" readonly=""
+                        style="text-align:right;margin-left:35px;font-weight:bold;display:table;"></td>
+                      <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+                        style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+                      </tr>
+                  </tbody>
+                  </table>
+
+                  <br>
+
+
+                <table id="tblProducts">
+                  <tbody>
+                      <tr>
+                      <td>
+                <!-- UBACITI INPUT -->
+                <div class="input-group">
+                      <span class="input-group-btn">
+                          <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty14">
+                              <span class="glyphicon glyphicon-minus"></span>
+                          </button>
+                      </span>
+                      <input type="text" name="qty14" class="form-control input-number qty14" min="0" max="100">
+                      <span class="input-group-btn">
+                          <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty14">
+                              <span class="glyphicon glyphicon-plus"></span>
+                          </button>
+                      </span>
+                  </div>
+                </td><td><h5 style="margin-left:35px;text-align:center;">Pflanze bis 1,5 Meter</h5></td>
+
+                      <td><input type="text" class="price border border-0" value="4" name="price" readonly=""
+                        style="text-align:right;margin-left:35px;font-weight:bold;display:table;"></td>
+                      <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+                        style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+                      </tr>
+                  </tbody>
+                  </table>
+
+                  <br>
+
+                  <table id="tblProducts">
+                    <tbody>
+                        <tr>
+                        <td>
+                  <!-- UBACITI INPUT -->
+                  <div class="input-group">
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty15">
+                                <span class="glyphicon glyphicon-minus"></span>
+                            </button>
+                        </span>
+                        <input type="text" name="qty15" class="form-control input-number qty15" min="0" max="100">
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty15">
+                                <span class="glyphicon glyphicon-plus"></span>
+                            </button>
+                        </span>
+                    </div>
+                  </td><td><h5 style="margin-left:35px;text-align:center;">Pflanze über 1,5 Meter</h5></td>
+
+                        <td><input type="text" class="price border border-0" value="8" name="price" readonly=""
+                          style="text-align:right;margin-left:25px;font-weight:bold;display:table;"></td>
+                        <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+                          style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+                        </tr>
+                    </tbody>
+                    </table>
+
+                    <br>
+
+                  <table id="tblProducts">
+                    <tbody>
+                        <tr>
+                        <td>
+                  <!-- UBACITI INPUT -->
+                  <div class="input-group">
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty16">
+                                <span class="glyphicon glyphicon-minus"></span>
+                            </button>
+                        </span>
+                        <input type="text" name="qty16" class="form-control input-number qty16" min="0" max="100">
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty16">
+                                <span class="glyphicon glyphicon-plus"></span>
+                            </button>
+                        </span>
+                    </div>
+                  </td><td><h5 style="margin-left:35px;text-align:center;">Schrank bis zwei Türen nicht<br> zerlegbar	</h5></td>
+
+                        <td><input type="text" class="price border border-0" value="15" name="price" readonly=""
+                          style="text-align:right;margin-left:-12px;font-weight:bold;display:table;"></td>
+                        <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+                          style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+                        </tr>
+                    </tbody>
+                    </table>
+
+                    <br>
+
+                    <table id="tblProducts">
+                      <tbody>
+                          <tr>
+                          <td>
+                    <!-- UBACITI INPUT -->
+                    <div class="input-group">
+                          <span class="input-group-btn">
+                              <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty17">
+                                  <span class="glyphicon glyphicon-minus"></span>
+                              </button>
+                          </span>
+                          <input type="text" name="qty17" class="form-control input-number qty17" min="0" max="100">
+                          <span class="input-group-btn">
+                              <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty17">
+                                  <span class="glyphicon glyphicon-plus"></span>
+                              </button>
+                          </span>
+                      </div>
+                    </td><td><h5 style="margin-left:35px;text-align:center;">Schrank zerlegbar je angef. M.</h5></td>
+
+                          <td><input type="text" class="price border border-0" value="8" name="price" readonly=""
+                            style="text-align:right;margin-left:-24px;font-weight:bold;display:table;"></td>
+                          <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+                            style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+                          </tr>
+                      </tbody>
+                      </table>
+
+
+                      <br>
+
+                    <table id="tblProducts">
+                      <tbody>
+                          <tr>
+                          <td>
+                    <!-- UBACITI INPUT -->
+                    <div class="input-group">
+                          <span class="input-group-btn">
+                              <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty18">
+                                  <span class="glyphicon glyphicon-minus"></span>
+                              </button>
+                          </span>
+                          <input type="text" name="qty18" class="form-control input-number qty18" min="0" max="100">
+                          <span class="input-group-btn">
+                              <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty18">
+                                  <span class="glyphicon glyphicon-plus"></span>
+                              </button>
+                          </span>
+                      </div>
+                    </td><td><h5 style="margin-left:35px;text-align:center;">Schreibtisch bis 1,60 Meter</h5></td>
+
+                          <td><input type="text" class="price border border-0" value="12" name="price" readonly=""
+                            style="text-align:right;margin-left:-2px;font-weight:bold;display:table;"></td>
+                          <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+                            style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+                          </tr>
+                      </tbody>
+                      </table>
+
+                      <br>
+
+                      <table id="tblProducts">
+                        <tbody>
+                            <tr>
+                            <td>
+                      <!-- UBACITI INPUT -->
+                      <div class="input-group">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty19">
+                                    <span class="glyphicon glyphicon-minus"></span>
+                                </button>
+                            </span>
+                            <input type="text" name="qty19" class="form-control input-number qty19" min="0" max="100">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty19">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                </button>
+                            </span>
+                        </div>
+                      </td><td><h5 style="margin-left:35px;text-align:center;">Schreibtisch über 1,60 Meter</h5></td>
+
+                            <td><input type="text" class="price border border-0" value="17" name="price" readonly=""
+                              style="text-align:right;margin-left:-12px;font-weight:bold;display:table;"></td>
+                            <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+                              style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+                            </tr>
+                        </tbody>
+                        </table>
+
+
+                        <br>
+
+                      <table id="tblProducts">
+                        <tbody>
+                            <tr>
+                            <td>
+                      <!-- UBACITI INPUT -->
+                      <div class="input-group">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty20">
+                                    <span class="glyphicon glyphicon-minus"></span>
+                                </button>
+                            </span>
+                            <input type="text" name="qty20" class="form-control input-number qty20" min="0" max="100">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty20">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                </button>
+                            </span>
+                        </div>
+                      </td><td><h5 style="margin-left:35px;text-align:center;">Sekretär</h5></td>
+
+                            <td><input type="text" class="price border border-0" value="12" name="price" readonly=""
+                              style="text-align:right;margin-left:114px;font-weight:bold;display:table;"></td>
+                            <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+                              style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+                            </tr>
+                        </tbody>
+                        </table>
+
+                        <br>
+
+                        <table id="tblProducts">
+                          <tbody>
+                              <tr>
+                              <td>
+                        <!-- UBACITI INPUT -->
+                        <div class="input-group">
+                              <span class="input-group-btn">
+                                  <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty21">
+                                      <span class="glyphicon glyphicon-minus"></span>
+                                  </button>
+                              </span>
+                              <input type="text" name="qty21" class="form-control input-number qty21" min="0" max="100">
+                              <span class="input-group-btn">
+                                  <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty21">
+                                      <span class="glyphicon glyphicon-plus"></span>
+                                  </button>
+                              </span>
+                          </div>
+                        </td><td><h5 style="margin-left:35px;text-align:center;">Sessel mit Armlehne / ohne</h5></td>
+
+                              <td><input type="text" class="price border border-0" value="8" name="price" readonly=""
+                                style="text-align:right;margin-left:-5px;font-weight:bold;display:table;"></td>
+                              <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+                                style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+                              </tr>
+                          </tbody>
+                          </table>
+
+
+                          <br>
+
+                        <table id="tblProducts">
+                          <tbody>
+                              <tr>
+                              <td>
+                        <!-- UBACITI INPUT -->
+                        <div class="input-group">
+                              <span class="input-group-btn">
+                                  <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty22">
+                                      <span class="glyphicon glyphicon-minus"></span>
+                                  </button>
+                              </span>
+                              <input type="text" name="qty22" class="form-control input-number qty22" min="0" max="100">
+                              <span class="input-group-btn">
+                                  <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty22">
+                                      <span class="glyphicon glyphicon-plus"></span>
+                                  </button>
+                              </span>
+                          </div>
+                        </td><td><h5 style="margin-left:35px;text-align:center;">Sideboard</h5></td>
+
+                              <td><input type="text" class="price border border-0" value="12" name="price" readonly=""
+                                style="text-align:right;margin-left:103px;font-weight:bold;display:table;"></td>
+                              <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+                                style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+                              </tr>
+                          </tbody>
+                          </table>
+
+                          <br>
+
+                          <table id="tblProducts">
+                            <tbody>
+                                <tr>
+                                <td>
+                          <!-- UBACITI INPUT -->
+                          <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty23">
+                                        <span class="glyphicon glyphicon-minus"></span>
+                                    </button>
+                                </span>
+                                <input type="text" name="qty23" class="form-control input-number qty23" min="0" max="100">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty23">
+                                        <span class="glyphicon glyphicon-plus"></span>
+                                    </button>
+                                </span>
+                            </div>
+                          </td><td><h5 style="margin-left:35px;text-align:center;">Sitzlandschaft (Element) je Sitz</h5></td>
+
+                                <td><input type="text" class="price border border-0" value="4" name="price" readonly=""
+                                  style="text-align:right;margin-left:-27px;font-weight:bold;display:table;"></td>
+                                <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+                                  style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+                                </tr>
+                            </tbody>
+                            </table>
+
+
+                            <br>
+
+                          <table id="tblProducts">
+                            <tbody>
+                                <tr>
+                                <td>
+                          <!-- UBACITI INPUT -->
+                          <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty24">
+                                        <span class="glyphicon glyphicon-minus"></span>
+                                    </button>
+                                </span>
+                                <input type="text" name="qty24" class="form-control input-number qty24" min="0" max="100">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty24">
+                                        <span class="glyphicon glyphicon-plus"></span>
+                                    </button>
+                                </span>
+                            </div>
+                          </td><td><h5 style="margin-left:35px;text-align:center;">Sofa, Couch, Liege, je Sitz</h5></td>
+
+                                <td><input type="text" class="price border border-0" value="4" name="price" readonly=""
+                                  style="text-align:right;margin-left:2px;font-weight:bold;display:table;"></td>
+                                <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+                                  style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+                                </tr>
+                            </tbody>
+                            </table>
+
+                            <br>
+
+                            <table id="tblProducts">
+                              <tbody>
+                                  <tr>
+                                  <td>
+                            <!-- UBACITI INPUT -->
+                            <div class="input-group">
+                                  <span class="input-group-btn">
+                                      <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty25">
+                                          <span class="glyphicon glyphicon-minus"></span>
+                                      </button>
+                                  </span>
+                                  <input type="text" name="qty25" class="form-control input-number qty25" min="0" max="100">
+                                  <span class="input-group-btn">
+                                      <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty25">
+                                          <span class="glyphicon glyphicon-plus"></span>
+                                      </button>
+                                  </span>
+                              </div>
+                            </td><td><h5 style="margin-left:35px;text-align:center;">Standuhr</h5></td>
+
+                                  <td><input type="text" class="price border border-0" value="4" name="price" readonly=""
+                                    style="text-align:right;margin-left:110px;font-weight:bold;display:table;"></td>
+                                  <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+                                    style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+                                  </tr>
+                              </tbody>
+                              </table>
+
+
+                              <br>
+
+                            <table id="tblProducts">
+                              <tbody>
+                                  <tr>
+                                  <td>
+                            <!-- UBACITI INPUT -->
+                            <div class="input-group">
+                                  <span class="input-group-btn">
+                                      <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty26">
+                                          <span class="glyphicon glyphicon-minus"></span>
+                                      </button>
+                                  </span>
+                                  <input type="text" name="qty26" class="form-control input-number qty26" min="0" max="100">
+                                  <span class="input-group-btn">
+                                      <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty26">
+                                          <span class="glyphicon glyphicon-plus"></span>
+                                      </button>
+                                  </span>
+                              </div>
+                            </td><td><h5 style="margin-left:35px;text-align:center;">Stehlampe</h5></td>
+
+                                  <td><input type="text" class="price border border-0" value="2" name="price" readonly=""
+                                    style="text-align:right;margin-left:100px;font-weight:bold;display:table;"></td>
+                                  <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+                                    style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+                                  </tr>
+                              </tbody>
+                              </table>
+
+                              <br>
+
+                              <table id="tblProducts">
+                                <tbody>
+                                    <tr>
+                                    <td>
+                              <!-- UBACITI INPUT -->
+                              <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty27">
+                                            <span class="glyphicon glyphicon-minus"></span>
+                                        </button>
+                                    </span>
+                                    <input type="text" name="qty27" class="form-control input-number qty27" min="0" max="100">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty27">
+                                            <span class="glyphicon glyphicon-plus"></span>
+                                        </button>
+                                    </span>
+                                </div>
+                              </td><td><h5 style="margin-left:35px;text-align:center;">Stereoanlage</h5></td>
+
+                                    <td><input type="text" class="price border border-0" value="4" name="price" readonly=""
+                                      style="text-align:right;margin-left:83px;font-weight:bold;display:table;"></td>
+                                    <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+                                      style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+                                      <td><label class="col-sm-1 col-form-label"><input type="checkbox"></label></td>
+                                      <td><label class="col-sm-1 col-form-label" style="margin-left:60px;"><input type="checkbox"></label></td>
+                                    </tr>
+                                </tbody>
+                                </table>
+
+                                <br>
+
+                              <table id="tblProducts">
+                                <tbody>
+                                    <tr>
+                                    <td>
+                              <!-- UBACITI INPUT -->
+                              <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty28">
+                                            <span class="glyphicon glyphicon-minus"></span>
+                                        </button>
+                                    </span>
+                                    <input type="text" name="qty28" class="form-control input-number qty28" min="0" max="100">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty28">
+                                            <span class="glyphicon glyphicon-plus"></span>
+                                        </button>
+                                    </span>
+                                </div>
+                              </td><td><h5 style="margin-left:35px;text-align:center;">Stuhl ohne Armlehne</h5></td>
+
+                                    <td><input type="text" class="price border border-0" value="2" name="price" readonly=""
+                                      style="text-align:right;margin-left:36px;font-weight:bold;display:table;"></td>
+                                    <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+                                      style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                </tfoot>
+                                </table>
+
+                                <br>
+
+ <!-- TABELA Sabiranje -->
+  <table id="tblProducts">
+  <tbody>
+      <tr>
+      <td>
+<!-- UBACITI INPUT -->
+<div class="input-group">
+      <span class="input-group-btn">
+          <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty29">
+              <span class="glyphicon glyphicon-minus"></span>
+          </button>
+      </span>
+      <input type="text" name="qty29" class="form-control input-number qty29" min="0" max="100">
+      <span class="input-group-btn">
+          <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty29">
+              <span class="glyphicon glyphicon-plus"></span>
+          </button>
+      </span>
+  </div>
+  <td><h5 style="margin-left:35px;text-align:center;">Stuhl mit Armlehne	</h5></td>
+
+      <td><input type="text" class="price border border-0" value="3" name="price" readonly=""
+        style="text-align:right;margin-left:48px;font-weight:bold;"></td>
+      <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+        style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+      </tr>
+  </tbody>
+  </table>
+
+<br>
+<!-- TABELA Sabiranje END -->
+
+<!-- TABELA Sabiranje -->
+ <table id="tblProducts">
+ <tbody>
+     <tr>
+     <td>
+<!-- UBACITI INPUT -->
+<div class="input-group">
+     <span class="input-group-btn">
+         <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty30">
+             <span class="glyphicon glyphicon-minus"></span>
+         </button>
+     </span>
+     <input type="text" name="qty30" class="form-control input-number qty30" min="0" max="100">
+     <span class="input-group-btn">
+         <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty30">
+             <span class="glyphicon glyphicon-plus"></span>
+         </button>
+     </span>
+ </div>
+ <td><h5 style="margin-left:35px;text-align:center;">Teppich</h5></td>
+
+     <td><input type="text" class="price border border-0" value="4" name="price" readonly=""
+       style="text-align:right;margin-left:118px;font-weight:bold;"></td>
+     <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+       style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+     </tr>
+ </tbody>
+ </table>
+
+<br>
+
+
+<!-- TABELA Sabiranje -->
+ <table id="tblProducts">
+ <tbody>
+     <tr>
+     <td>
+<!-- UBACITI INPUT -->
+<div class="input-group">
+     <span class="input-group-btn">
+         <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty31">
+             <span class="glyphicon glyphicon-minus"></span>
+         </button>
+     </span>
+     <input type="text" name="qty31" class="form-control input-number qty31" min="0" max="100">
+     <span class="input-group-btn">
+         <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty31">
+             <span class="glyphicon glyphicon-plus"></span>
+         </button>
+     </span>
+ </div>
+ <td><h5 style="margin-left:35px;text-align:center;">Tisch bis 0,6 Meter</h5></td>
+
+     <td><input type="text" class="price border border-0" value="4" name="price" readonly=""
+       style="text-align:right;margin-left:49px;font-weight:bold;"></td>
+     <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+       style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+     </tr>
+ </tbody>
+ </table>
+
+<br>
+
+
+<!-- TABELA Sabiranje -->
+ <table id="tblProducts">
+ <tbody>
+     <tr>
+     <td>
+<!-- UBACITI INPUT -->
+<div class="input-group">
+     <span class="input-group-btn">
+         <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty32">
+             <span class="glyphicon glyphicon-minus"></span>
+         </button>
+     </span>
+     <input type="text" name="qty32" class="form-control input-number qty32" min="0" max="100">
+     <span class="input-group-btn">
+         <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty32">
+             <span class="glyphicon glyphicon-plus"></span>
+         </button>
+     </span>
+ </div>
+ <td><h5 style="margin-left:35px;text-align:center;">Tisch bis 1,20 Meter</h5></td>
+
+     <td><input type="text" class="price border border-0" value="6" name="price" readonly=""
+       style="text-align:right;margin-left:41px;font-weight:bold;"></td>
+     <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+       style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+     </tr>
+ </tbody>
+ </table>
+
+<br>
+
+
+<!-- TABELA Sabiranje -->
+ <table id="tblProducts">
+ <tbody>
+     <tr>
+     <td>
+<!-- UBACITI INPUT -->
+<div class="input-group">
+     <span class="input-group-btn">
+         <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty33">
+             <span class="glyphicon glyphicon-minus"></span>
+         </button>
+     </span>
+     <input type="text" name="qty33" class="form-control input-number qty33" min="0" max="100">
+     <span class="input-group-btn">
+         <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty33">
+             <span class="glyphicon glyphicon-plus"></span>
+         </button>
+     </span>
+ </div>
+ <td><h5 style="margin-left:35px;text-align:center;">Tisch über 1,20 Meter</h5></td>
+
+     <td><input type="text" class="price border border-0" value="8" name="price" readonly=""
+       style="text-align:right;margin-left:31px;font-weight:bold;"></td>
+     <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+       style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+     </tr>
+ </tbody>
+ </table>
+
+<br>
+
+
+<!-- TABELA Sabiranje -->
+ <table id="tblProducts">
+ <tbody>
+     <tr>
+     <td>
+<!-- UBACITI INPUT -->
+<div class="input-group">
+     <span class="input-group-btn">
+         <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty34">
+             <span class="glyphicon glyphicon-minus"></span>
+         </button>
+     </span>
+     <input type="text" name="qty34" class="form-control input-number qty34" min="0" max="100">
+     <span class="input-group-btn">
+         <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty34">
+             <span class="glyphicon glyphicon-plus"></span>
+         </button>
+     </span>
+ </div>
+ <td><h5 style="margin-left:35px;text-align:center;">Wohnzimmerschrank zerlegbar<br> je angef. M.</h5></td>
+
+     <td><input type="text" class="price border border-0" value="8" name="price" readonly=""
+       style="text-align:right;margin-left:-27px;font-weight:bold;display:table;"></td>
+     <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+       style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+     </tr>
+ </tbody>
+ </table>
+
+<br>
+
+
+<!-- TABELA Sabiranje -->
+ <table id="tblProducts">
+ <tbody>
+     <tr>
+     <td>
+<!-- UBACITI INPUT -->
+<div class="input-group">
+     <span class="input-group-btn">
+         <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty35">
+             <span class="glyphicon glyphicon-minus"></span>
+         </button>
+     </span>
+     <input type="text" name="qty35" class="form-control input-number qty35" min="0" max="100">
+     <span class="input-group-btn">
+         <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty35">
+             <span class="glyphicon glyphicon-plus"></span>
+         </button>
+     </span>
+ </div>
+ <td><h5 style="margin-left:35px;text-align:center;">Bücher / Aktenkarton</h5></td>
+
+     <td><input type="text" class="price border border-0" value="1" name="price" readonly=""
+       style="text-align:right;margin-left:36px;font-weight:bold;"></td>
+     <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+       style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+       <td><label class="col-sm-1 col-form-label"><input type="checkbox"></label></td>
+       <td><label class="col-sm-1 col-form-label" style="margin-left:60px;"><input type="checkbox"></label></td>
+
+     </tr>
+ </tbody>
+ </table>
+
+<br>
+
+
+<!-- TABELA Sabiranje -->
+ <table id="tblProducts">
+ <tbody>
+     <tr>
+     <td>
+<!-- UBACITI INPUT -->
+<div class="input-group">
+     <span class="input-group-btn">
+         <button type="button" class="btn btn-default btn-number quantity" data-type="minus" data-field="qty36">
+             <span class="glyphicon glyphicon-minus"></span>
+         </button>
+     </span>
+     <input type="text" name="qty36" class="form-control input-number qty36" min="0" max="100">
+     <span class="input-group-btn">
+         <button type="button" class="btn btn-default btn-number quantity" data-type="plus" data-field="qty36">
+             <span class="glyphicon glyphicon-plus"></span>
+         </button>
+     </span>
+ </div>
+ <td><h5 style="margin-left:35px;text-align:center;">Umzugskarton</h5></td>
+
+     <td><input type="text" class="price border border-0" value="1" name="price" readonly=""
+       style="text-align:right;margin-left:76px;font-weight:bold;"></td>
+     <td><input type="text" class="subtot border border-0" value="0" name="subtot" readonly=""
+       style="text-align:center;margin-left:15px;font-weight:bold;"></td>
+       <td><label class="col-sm-1 col-form-label"><input type="checkbox"></label></td>
+       <td><label class="col-sm-1 col-form-label" style="margin-left:60px;"><input type="checkbox"></label></td>
+     </tr>
+ </tbody>
+ </table>
+
+<br>
+
+
+
+
+<!-- SABIRANJE REDOVA -->
+
+<head>
+    <script src="../scripts/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty').on('change', function () {
+
+                    var qty = $tblrow.find("[name=qty]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty1').on('change', function () {
+
+                    var qty1 = $tblrow.find("[name=qty1]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty1, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty2').on('change', function () {
+
+                    var qty2 = $tblrow.find("[name=qty2]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty2, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty3').on('change', function () {
+
+                    var qty3 = $tblrow.find("[name=qty3]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty3, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty4').on('change', function () {
+
+                    var qty4 = $tblrow.find("[name=qty4]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty4, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty5').on('change', function () {
+
+                    var qty5 = $tblrow.find("[name=qty5]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty5, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty6').on('change', function () {
+
+                    var qty6 = $tblrow.find("[name=qty6]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty6, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty7').on('change', function () {
+
+                    var qty7 = $tblrow.find("[name=qty7]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty7, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty8').on('change', function () {
+
+                    var qty8 = $tblrow.find("[name=qty8]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty8, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty9').on('change', function () {
+
+                    var qty9 = $tblrow.find("[name=qty9]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty9, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty10').on('change', function () {
+
+                    var qty10 = $tblrow.find("[name=qty10]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty10, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty11').on('change', function () {
+
+                    var qty11 = $tblrow.find("[name=qty11]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty11, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty12').on('change', function () {
+
+                    var qty12 = $tblrow.find("[name=qty12]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty12, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty13').on('change', function () {
+
+                    var qty13 = $tblrow.find("[name=qty13]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty13, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty14').on('change', function () {
+
+                    var qty14 = $tblrow.find("[name=qty14]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty14, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty15').on('change', function () {
+
+                    var qty15 = $tblrow.find("[name=qty15]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty15, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty16').on('change', function () {
+
+                    var qty16 = $tblrow.find("[name=qty16]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty16, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty17').on('change', function () {
+
+                    var qty17 = $tblrow.find("[name=qty17]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty17, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty18').on('change', function () {
+
+                    var qty18 = $tblrow.find("[name=qty18]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty18, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty19').on('change', function () {
+
+                    var qty19 = $tblrow.find("[name=qty19]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty19, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty20').on('change', function () {
+
+                    var qty20 = $tblrow.find("[name=qty20]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty20, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty21').on('change', function () {
+
+                    var qty21 = $tblrow.find("[name=qty21]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty21, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty22').on('change', function () {
+
+                    var qty22 = $tblrow.find("[name=qty22]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty22, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty23').on('change', function () {
+
+                    var qty23 = $tblrow.find("[name=qty23]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty23, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty24').on('change', function () {
+
+                    var qty24 = $tblrow.find("[name=qty24]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty24, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty25').on('change', function () {
+
+                    var qty25 = $tblrow.find("[name=qty25]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty25, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty26').on('change', function () {
+
+                    var qty26 = $tblrow.find("[name=qty26]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty26, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty27').on('change', function () {
+
+                    var qty27 = $tblrow.find("[name=qty27]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty27, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty28').on('change', function () {
+
+                    var qty28 = $tblrow.find("[name=qty28]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty28, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty29').on('change', function () {
+
+                    var qty29 = $tblrow.find("[name=qty29]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty29, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty30').on('change', function () {
+
+                    var qty30 = $tblrow.find("[name=qty30]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty30, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty31').on('change', function () {
+
+                    var qty31 = $tblrow.find("[name=qty31]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty31, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty32').on('change', function () {
+
+                    var qty32 = $tblrow.find("[name=qty32]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty32, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty33').on('change', function () {
+
+                    var qty33 = $tblrow.find("[name=qty33]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty33, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty34').on('change', function () {
+
+                    var qty34 = $tblrow.find("[name=qty34]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty34, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty35').on('change', function () {
+
+                    var qty35 = $tblrow.find("[name=qty35]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty35, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $('.pnm, .price, .subtot, .grdtot').prop('readonly', true);
+            var $tblrows = $("#tblProducts tbody tr");
+
+            $tblrows.each(function (index) {
+                var $tblrow = $(this);
+
+                $tblrow.find('.qty36').on('change', function () {
+
+                    var qty36 = $tblrow.find("[name=qty36]").val();
+                    var price = $tblrow.find("[name=price]").val();
+                    var subTotal = parseInt(qty36, 10) * parseFloat(price);
+
+
+                    if (!isNaN(subTotal)) {
+
+                        $tblrow.find('.subtot').val(subTotal.toFixed(2));
+                        var grandTotal = 0;
+
+                        $(".subtot").each(function () {
+                            var stval = parseFloat($(this).val());
+                            grandTotal += isNaN(stval) ? 0 : stval;
+                        });
+
+                        $('.grdtot').val(grandTotal.toFixed(2));
+                    }
+                });
+            });
+        });
+    </script>
+
+
+</head>
+<body cz-shortcut-listen="true">
+
+</body>
+<!-- SABIRANJE REDOVA  END -->
+
+
+  <p style="text-align:left;">Sonstiges - Wohnzimmer</p>
+    <div class="form-group" style="width:60%;">
+    <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="4"></textarea>
+    </div>
+
+    <div class="row border-secondary border-bottom" style="float:right;font-weight:bold;background-color:#EEEEEE;">
+            <td>Zwischensumme Wohnzimmer: &nbsp;<input type='text' class="grdtot border border-0"
+              style="color:red;font-weight:bold;"></td>RE
+          </div>
+<br>
+<br>
+<br>
+
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-5 col-form-label">
+      <a href="C:\Users\Eldar\Desktop\bootstrap-4.1.3-dist\index.html"
+        class="previous float-left">Home
+      </a>
+    </label>
+    <div class="col-sm-7">
+      <a href="C:\Users\Eldar\Desktop\bootstrap-4.1.3-dist\form7.html"
+      class="next float-right">
+      <img src="C:\Users\Eldar\Desktop\bootstrap-4.1.3-dist\Back.png">
+      </a>
+
+    </div>
+  </div>
+
+  <!-- SCRIPTA ZA QUANTITY -->
+  <script>
+$('.btn-number').click(function(e){
+    e.preventDefault();
+
+    fieldName = $(this).attr('data-field');
+    type      = $(this).attr('data-type');
+    var input = $("input[name='"+fieldName+"']");
+    var currentVal = parseInt(input.val());
+    if (!isNaN(currentVal)) {
+        if(type == 'minus') {
+
+            if(currentVal > input.attr('min')) {
+                input.val(currentVal - 1).change();
+            }
+            if(parseInt(input.val()) == input.attr('min')) {
+                $(this).attr('disabled', true);
+            }
+
+        } else if(type == 'plus') {
+
+            if(currentVal < input.attr('max')) {
+                input.val(currentVal + 1).change();
+            }
+            if(parseInt(input.val()) == input.attr('max')) {
+                $(this).attr('disabled', true);
+            }
+
+        }
+    } else {
+        input.val(0);
+    }
+});
+$('.input-number').focusin(function(){
+   $(this).data('oldValue', $(this).val());
+});
+$('.input-number').change(function() {
+
+    minValue =  parseInt($(this).attr('min'));
+    maxValue =  parseInt($(this).attr('max'));
+    valueCurrent = parseInt($(this).val());
+
+    name = $(this).attr('name');
+    if(valueCurrent >= minValue) {
+        $(".btn-number[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
+    } else {
+        alert('Sorry, the minimum value was reached');
+        $(this).val($(this).data('oldValue'));
+    }
+    if(valueCurrent <= maxValue) {
+        $(".btn-number[data-type='plus'][data-field='"+name+"']").removeAttr('disabled')
+    } else {
+        alert('Sorry, the maximum value was reached');
+        $(this).val($(this).data('oldValue'));
+    }
+
+
+});
+$(".input-number").keydown(function (e) {
+        // Allow: backspace, delete, tab, escape, enter and .
+        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+             // Allow: Ctrl+A
+            (e.keyCode == 65 && e.ctrlKey === true) ||
+             // Allow: home, end, left, right
+            (e.keyCode >= 35 && e.keyCode <= 39)) {
+                 // let it happen, don't do anything
+                 return;
+        }
+        // Ensure that it is a number and stop the keypress
+        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+            e.preventDefault();
+        }
+    });
+  </script>
+  <!-- SCRIPTA ZA QUANTITY -->
+  <script>
+// we used jQuery 'keyup' to trigger the computation as the user type
+$('.price').keyup(function () {
+
+    // initialize the sum (total price) to zero
+    var sum = 0;
+
+    // we use jQuery each() to loop through all the textbox with 'price' class
+    // and compute the sum for each loop
+    $('.price').each(function() {
+        sum += Number($(this).val());
+
+    });
+
+    // set the computed value to 'totalPrice' textbox
+    $('#totalPrice').val(sum);
+
+});
+</script>
+<script>
+// we used jQuery 'keyup' to trigger the computation as the user type
+$('.price').keyup(function () {
+
+  // initialize the sum (total price) to zero
+  var sum = 0;
+
+  // we use jQuery each() to loop through all the textbox with 'price' class
+  // and compute the sum for each loop
+  $('.price').each(function() {
+      sum += Number($(this).val());
+
+  });
+
+  // set the computed value to 'totalPrice' textbox
+  $('#totalPrice').val(sum);
+
+});
+</script>
+
+
+</form>
+</div>
+</body>
+</html>
+
+<style>
+.form-style-6{
+    font: 95% Arial, Helvetica, sans-serif;
+    max-width: 1248px;
+    margin: 10px auto;
+    padding: 16px;
+    background: white;
+}
+.form-style-6 h1{
+    background: #273858;
+    padding: 20px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    margin: -16px -16px 16px -16px;
+}
+
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+    background-color: none;
+    color: white;
+}
+
+.next {
+    background-color: #4C84B2;
+    color: white;
+    padding: 5px 9px 5px 9px;
+
+}
+.previous{
+  background-color: #4C84B2;
+  color: white;
+  padding: 6px 11px 6px 11px;
+  margin-top: -7px;
+}
+.quantity{
+  color: white;
+  background-color: #273858;
+}
+.red1{
+  margin-left: -50px;
+}
+.round {
+    border-radius: 50%;
+}
+</style>
